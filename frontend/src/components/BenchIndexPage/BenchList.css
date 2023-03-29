@@ -1,0 +1,22 @@
+.bench-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.bench-list h1 {
+  flex-basis: 100%;
+}
+
+.bench-list-item {
+  flex-basis: 50%;
+  border: 1px solid black;
+  margin: 10px 0;
+  padding: 10px 0;
+  /* border-radius: 100%; */
+}
+
+.bench-list-item:hover {
+  cursor: pointer;
+}

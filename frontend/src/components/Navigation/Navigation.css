@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 20px 40px;
+}
+
+.home-link {
+  flex-basis: 75%;
+}
+
+.session-links {
+  flex-basis: 25%;
+  
+  display: flex;
+  justify-content: space-around;
+}

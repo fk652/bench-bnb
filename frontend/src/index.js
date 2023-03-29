@@ -1,4 +1,4 @@
-// import "./reset.css";
+import "./reset.css";
 import "./index.css";
 
 import React from "react";

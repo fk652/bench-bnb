@@ -38,7 +38,7 @@ ApplicationRecord.transaction do
   Bench.create!({
     title: "Sean's Lap",
     description: "You will feel like a-bbas sitting here 😏",
-    price: 10,
+    price: 499.99,
     seating: 1,
     lat: 40.73627257214345,
     lng: -73.99378877958152
@@ -53,14 +53,14 @@ ApplicationRecord.transaction do
   })
   Bench.create!({
     title: "Washington Square Park",
-    description: "The only normal benches here",
+    description: "The only normal bench here",
     price: 25,
     seating: 5,
     lat: 40.73084605087852,
     lng: -73.9970998247001
   })
   Bench.create!({
-    title: "Lost Wish-Granting Bench",
+    title: "Forgotten Wish-Granting Bench",
     description: "Legend says an App Academy student passed all their exams after making a wish here ...but never came back",
     price: 69,
     seating: 1,

@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
 import { fetchBench } from "../../store/benches";
+import capycloset from "./IMG_5362.jpg";
+import "./BenchShow.css";
 
 const BenchShowPage = () => {
   const {benchId} = useParams();
@@ -23,7 +25,7 @@ const BenchShowPage = () => {
       imgSauce = "https://secure.gravatar.com/avatar/0b9682de5647f55e1446b05be50dd04a?secure=true&size=300"
       break;
     case 3:
-      imgSauce = ""
+      imgSauce = capycloset
       break;
     case 5:
       imgSauce = "https://thumbs.dreamstime.com/b/park-bench-empty-dirty-51491869.jpg"
@@ -33,14 +35,14 @@ const BenchShowPage = () => {
   }
 
   return (
-    <div>
+    <div className="bench-show-page">
       {/* Bench Show Page */}
-      <div class="header">
+      <div className="header">
         <h1>{bench.title}</h1>
         <Link to="/">All Benches</Link>
       </div>
       <img src={imgSauce} alt="capybara"/>
-      <div class="details">
+      <div className="details">
         <h2>Details</h2>
         <p>{bench.description}</p>
         <ul>

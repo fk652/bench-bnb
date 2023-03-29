@@ -7,7 +7,7 @@ const BenchListItem = ({bench}) => {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div className="bench-list-item" onClick={handleClick}>
       <h2>{bench.title}</h2>
       <p>${bench.price}</p>
     </div>

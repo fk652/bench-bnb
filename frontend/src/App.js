@@ -9,17 +9,17 @@ function App() {
   return (
     <>
       <Navigation />
-        <Switch>
-          <Route path="/signup">
-            <SignupFormPage />
-          </Route>
-          <Route path="/benches/:benchId">
-            <BenchShowPage />
-          </Route>
-          <Route exact path="/">
-            <BenchIndexPage />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route path="/signup">
+          <SignupFormPage />
+        </Route>
+        <Route path="/benches/:benchId">
+          <BenchShowPage />
+        </Route>
+        <Route exact path="/">
+          <BenchIndexPage />
+        </Route>
+      </Switch>
     </>
   );
 }

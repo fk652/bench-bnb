@@ -1,0 +1,17 @@
+.bench-show-page {
+  /* margin: 0 auto; */
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  max-height: 500px;
+}
+
+.details h2, .details p, .details ul {
+  margin: 20px 0;
+}
+
+.details ul > li {
+  margin: 10px 0; 
+}

@@ -1,0 +1,15 @@
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.submit-form label {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  align-items: space-around;
+  text-align: center;
+  margin: 10px 0;
+}
