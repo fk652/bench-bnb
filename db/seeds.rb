@@ -2,6 +2,7 @@ ApplicationRecord.transaction do
   puts "Destroying tables..."
   # Unnecessary if using `rails db:seed:replant`
   User.destroy_all
+  Bench.destroy_all
 
   puts "Resetting primary keys..."
   # For easy testing, so that after seeding, the first `User` has `id` of 1
@@ -29,7 +30,7 @@ ApplicationRecord.transaction do
   Bench.create!({
     title: "Lincoln Memorial",
     description: "For the one and only",
-    price: 10000,
+    price: 1865,
     seating: 0,
     lat: 38.88927050632587,
     lng: -77.05013698360837
@@ -39,8 +40,8 @@ ApplicationRecord.transaction do
     description: "Feel like a-bbas when sitting here 😏",
     price: 10,
     seating: 1,
-    lat: 38.88927050632587,
-    lng: -77.05013698360837
+    lat: 40.73627257214345,
+    lng: -73.99378877958152
   })
   Bench.create!({
     title: "Fahim's Closet",

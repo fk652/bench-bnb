@@ -8,6 +8,7 @@ import App from "./App";
 import configureStore from "./store";
 import csrfFetch from "./store/csrf";
 import * as sessionActions from "./store/session";
+import * as benchActions from "./store/benches";
 
 const store = configureStore();
 
@@ -15,6 +16,16 @@ if (process.env.NODE_ENV !== "production") {
   window.store = store;
   window.csrfFetch = csrfFetch;
   window.sessionActions = sessionActions;
+  window.benchActions = benchActions;
+
+  window.dummyBench = {
+    title: "App Academy Bleachers",
+    description: "Only dummies sit here",
+    price: 10000,
+    seating: 1,
+    lat: 40.73628742145078,
+    lng: -73.99381183979978
+  }
 }
 
 function Root() {
