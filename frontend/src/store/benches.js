@@ -29,9 +29,9 @@ export const fetchBench = (benchId) => async dispatch => {
 
   if (response.ok) {
     const data = await response.json();
-    console.log("fetch bench data", data);
+    // console.log("fetch bench data", data);
 
-    // dispatch(addBench(data.bench))
+    dispatch(addBench(data.bench))
   }
 }
 
@@ -45,7 +45,7 @@ export const createBench = (bench) => async dispatch => {
     const data = await response.json();
     // console.log("create bench data", data);
 
-    // dispatch(addBench(data.bench));
+    dispatch(addBench(data.bench));
   }
 }
 

@@ -6,7 +6,7 @@ import benchesReducer from './benches';
 
 const rootReducer = combineReducers({
   session: sessionReducer,
-  bench: benchesReducer
+  benches: benchesReducer
 });
 
 let enhancer;

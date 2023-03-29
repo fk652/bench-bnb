@@ -37,7 +37,7 @@ ApplicationRecord.transaction do
   })
   Bench.create!({
     title: "Sean's Lap",
-    description: "Feel like a-bbas when sitting here 😏",
+    description: "You will feel like a-bbas sitting here 😏",
     price: 10,
     seating: 1,
     lat: 40.73627257214345,
@@ -61,7 +61,7 @@ ApplicationRecord.transaction do
   })
   Bench.create!({
     title: "Lost Wish-Granting Bench",
-    description: "Legend says an App Academy student passed all their exams after making a wish here ...but was never came back",
+    description: "Legend says an App Academy student passed all their exams after making a wish here ...but never came back",
     price: 69,
     seating: 1,
     lat: 25,
