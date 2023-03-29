@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { ModalProvider } from "./context/Modal";
@@ -17,7 +17,7 @@ if (process.env.NODE_ENV !== "production") {
   window.sessionActions = sessionActions;
 }
 
-const Root = () => {
+function Root() {
   return (
     <ModalProvider>
       <Provider store={store}>
@@ -30,11 +30,11 @@ const Root = () => {
 }
 
 const renderApplication = () => {
-  const root = ReactDOM.createRoot(document.getElementById('root')); 
-  root.render(
+  ReactDOM.render(
     <React.StrictMode>
       <Root />
-    </React.StrictMode>
+    </React.StrictMode>,
+    document.getElementById('root')
   );
 }
 
