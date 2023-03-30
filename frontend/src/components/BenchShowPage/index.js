@@ -46,7 +46,7 @@ const BenchShowPage = () => {
         <h2>Details</h2>
         <p>{bench.description}</p>
         <ul>
-          <li>Seats: {bench.seats}</li>
+          <li>Seats: {bench.seating}</li>
           <li>Latitude: {bench.lat}</li>
           <li>Longitude: {bench.lng}</li>
         </ul>

@@ -29,7 +29,7 @@ ApplicationRecord.transaction do
   puts "Creating benches..."
   Bench.create!({
     title: "Lincoln Memorial",
-    description: "For the one and only",
+    description: "Forever reserved by the one and only 🫡",
     price: 1865,
     seating: 0,
     lat: 38.88927050632587,
